@@ -2,4 +2,4 @@
 
 * Generated with TVHeadend-4.3
 * EPG Data grabbed with DVBSky S960
-* Latest file: [a3B_a1.xml](https://raw.githubusercontent.com/370network/skylink-xmltv/refs/heads/main/a3b_a1.xml)
+* Latest file: [a3b_a1.xml](https://raw.githubusercontent.com/370network/skylink-xmltv/refs/heads/main/a3b_a1.xml)
