@@ -73,9 +73,9 @@ div.guide-date {
   .guide-channel-name {
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 150px;
-    height: 24px;
+    /*height: 24px;*/
     color: white;
   }
   
