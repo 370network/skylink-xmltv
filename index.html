@@ -374,10 +374,12 @@ function programme(id,logo,name) {
 
 function processXML() {
 
-  var content = "";
+  var rows = [];
+
   $channel = xml.find( "channel" ).each(function(){
     var id = $(this).attr("id");
-    var name = $(this).find('display-name').text();
+    var name = $(this).find('display-name').eq(0).text();
+    var number = $(this).find('display-name').eq(1).text();
     var logo = "";
 
 
@@ -387,15 +389,21 @@ function processXML() {
       }
     }
 
-    content+='<tr>';
-    content+='<td><div class="guide-channel text-center" channelid="'+id+'">' + (logo != '' ? '<img src="'+logo+'" class="img-fluid guide-channel-image" loading="lazy">' : '') + '<div class="guide-channel-name">'+name+'</div></div></td>';
-    content+='<td colspan="48">';
-    content+='</td>';
-    content+='</tr>';
+    var row ='<tr class="channel-row" channelnumber="'+number+'">';
+    row +='<td><div class="guide-channel text-center" channelid="'+id+'">' + (logo != '' ? '<img src="'+logo+'" class="img-fluid guide-channel-image" loading="lazy">' : '') + '<div class="guide-channel-name">'+number+"<br>"+name+'</div></div></td>';
+    row +='<td colspan="48">';
+    row +='</td>';
+    row +='</tr>';
+    
+    rows.push({ number: parseInt(number, 10), row: row });
+    
     });
 
-    $("#guide-body").append(content);
-    updateDate();
+	rows.sort((a, b) => a.number - b.number);
+    var sortedContent = rows.map(item => item.row).join("");
+    $("#guide-body").html(sortedContent);
+
+	updateDate();
     installChannelObserver();
 }
 
