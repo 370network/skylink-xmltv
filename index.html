@@ -203,36 +203,6 @@ function updateProgress(evt) {
     }
 }
 
-function handleFileSelect(evt) {
-  eraseAll();
-    // Reset progress indicator on new file selection.
-    //progress.style.width = '0%';
-    //progress.textContent = '0%';
-
-    reader = new FileReader();
-    reader.onerror = errorHandler;
-    reader.onprogress = updateProgress;
-    reader.onabort = function(e) {
-        alert('File read cancelled');
-    };
-    reader.onloadstart = function(e) {
-        //document.getElementById('progress_bar').className = 'loading';
-    };
-    reader.onload = function(event) {
-        // Ensure that the progress bar displays 100% at the end.
-        //progress.style.width = '100%';
-        //progress.textContent = '100%';
-        //setTimeout("document.getElementById('progress_bar').className='';", 2000);
-        var contents = event.target.result;
-        xmlDoc = $.parseXML(contents);
-        $xml = $( xmlDoc );
-        xml = $xml;
-        processXML();
-        
-    };
-    reader.readAsText(evt.target.files[0]);
-}
-
 function programme(id,logo,name) {
   var content = '';
   xml.find("programme[channel='"+id+"']").each(function(){
@@ -478,89 +448,66 @@ function eraseAll() {
   updateDate();
 }
 
+eraseAll();
 
-document.getElementById('file').addEventListener('change', handleFileSelect, false);
-$(".load-example").click(function () {
-  eraseAll();
-  //console.log("load example");
-
-
-  $.ajax({
-    type: 'GET',
-    dataType: 'binary',
-    url: "guide.xml.gz",
-    cache: true,
-    error: function (xhr, ajaxOptions, thrownError) {
-        console.log(thrownError);
-        $('#loading').on('shown.bs.modal', function (e) {
-          $('#loading').modal('hide');
-        });
-        $('#loading').hide('hide');
-        //console.log("hidden");
-        $('#errorLoading').modal('show');
-    },
-    xhr: function () {
-        var xhr = new window.XMLHttpRequest();
-        xhr.responseType = 'arraybuffer';
-        //Download progress
-        xhr.addEventListener("progress", function (evt) {
-            if (evt.lengthComputable) {
-                var percentComplete = evt.loaded / evt.total;
-                //console.log(percentComplete);
-                //progressElem.html(Math.round(percentComplete * 100) + "%");
-                $("#progress-bar").css("width",Math.round(percentComplete * 100) + "%");
-            }
-        }, false);
-        xhr.addEventListener('load',function(){
-          //console.log("load");
-          if (xhr.status === 200){
-            var byteArray = new Uint8Array(xhr.response);
-            var contents = pako.inflate(byteArray, {to: 'string'});
-            byteArray = null;
-            contents = '<?xml version="1.0" encoding="UTF-8"?>' + contents.replace(/[\w\W]+?\n+?/,"");
-            //console.log(contents);
-            //parser = new DOMParser();
-            //xmlDoc = parser.parseFromString(contents,"text/xml");
-            xmlDoc = $.parseXML(contents);
-            $xml = $( xmlDoc );
-            xml = $xml;
-            //console.log(xml.text());
-            processXML();
-            $('#loading').on('shown.bs.modal', function (e) {
-              $('#loading').modal('hide');
-            });      
-            $('#loading').modal('hide');            
-          }
-        });
-        return xhr;
-    },
-    beforeSend: function () {
-      $('#loading').off('shown.bs.modal');
-      $('#loading').modal('show');
-    },/*
-    complete: function (e) {
-      console.log("complete");
-      //console.log([e]);
-      //console.log(e);
-      //var byteArray = new Uint8Array([e]);
-      //console.log(byteArray.length);
-      //var contents = pako.inflate(byteArray, {to: 'string'});
-      //console.log(contents);
-      //xmlDoc = $.parseXML(new TextDecoder("utf-8").decode(contents));
-      //$xml = $( xmlDoc );
-      //xml = $xml;
-      //console.log(xml);
-      //processXML();
+$.ajax({
+  type: 'GET',
+  dataType: 'xml',
+  url: "https://github.com/370network/skylink-xmltv/raw/refs/heads/main/a3b_a1.xml",
+  cache: true,
+  error: function (xhr, ajaxOptions, thrownError) {
+      console.log(thrownError);
       $('#loading').on('shown.bs.modal', function (e) {
         $('#loading').modal('hide');
-      });      
-      $('#loading').modal('hide');
-    },*/
-    success: function (json) {
-      //console.log("data receieved");
-      $("#progress-bar").css("width","100%");
-    }
-});
+      });
+      $('#loading').hide('hide');
+      //console.log("hidden");
+      $('#errorLoading').modal('show');
+  },
+  xhr: function () {
+      var xhr = new window.XMLHttpRequest();
+      //xhr.responseType = 'arraybuffer';
+      //Download progress
+      xhr.addEventListener("progress", function (evt) {
+          if (evt.lengthComputable) {
+              var percentComplete = evt.loaded / evt.total;
+              //console.log(percentComplete);
+              //progressElem.html(Math.round(percentComplete * 100) + "%");
+              $("#progress-bar").css("width",Math.round(percentComplete * 100) + "%");
+          }
+      }, false);
+      xhr.addEventListener('load',function(){
+        //console.log("load");
+        if (xhr.status === 200){
+          //var byteArray = new Uint8Array(xhr.response);
+          var contents = xhr.response;
+          //byteArray = null;
+          //contents = '<?xml version="1.0" encoding="UTF-8"?>' + contents.replace(/[\w\W]+?\n+?/,"");
+          //contents = xhr.response;
+          //console.log(contents);
+          //parser = new DOMParser();
+          //xmlDoc = parser.parseFromString(contents,"text/xml");
+          xmlDoc = $.parseXML(contents);
+          $xml = $( xmlDoc );
+          xml = $xml;
+          //console.log(xml.text());
+          processXML();
+          $('#loading').on('shown.bs.modal', function (e) {
+            $('#loading').modal('hide');
+          });      
+          $('#loading').modal('hide');            
+        }
+      });
+      return xhr;
+  },
+  beforeSend: function () {
+    $('#loading').off('shown.bs.modal');
+    $('#loading').modal('show');
+  },
+  success: function (json) {
+    //console.log("data receieved");
+    $("#progress-bar").css("width","100%");
+  }
 });
 
 updateDate();
