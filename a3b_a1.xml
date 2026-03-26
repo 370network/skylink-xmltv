@@ -37,6 +37,10 @@
   <display-name>ORF RADIO OE1 DOLBY</display-name>
   <display-name>871</display-name>
 </channel>
+<channel id="755362842dc7526d01a6706c66dd1ec5">
+  <display-name>JOJ Sport 2 HD</display-name>
+  <display-name>100</display-name>
+</channel>
 <channel id="86c2c584ba7244e4b2cadccb47ca9a97">
   <display-name>CT 1 JZC HD</display-name>
   <display-name>354</display-name>
@@ -125,6 +129,10 @@
   <display-name>JOJ Cinema HD</display-name>
   <display-name>26</display-name>
 </channel>
+<channel id="3d61b10d5859fac88c7268a02db1ab14">
+  <display-name>HirTV</display-name>
+  <display-name>206</display-name>
+</channel>
 <channel id="72edb20d435c8baafda462f427edb723">
   <display-name>AMC SK</display-name>
   <display-name>34</display-name>
@@ -169,6 +177,14 @@
   <display-name>RTLup</display-name>
   <display-name>421</display-name>
 </channel>
+<channel id="5493fe9279bad5d5513be50a043a29e5">
+  <display-name>M2 / Petofi</display-name>
+  <display-name>201</display-name>
+</channel>
+<channel id="69f972137e1981f8067690febe06fd89">
+  <display-name>AutoMotorSport HD</display-name>
+  <display-name>112</display-name>
+</channel>
 <channel id="babcf3132f33cbb5f6261ba927561eb5">
   <display-name>France 24 (in English)</display-name>
   <display-name>235</display-name>
@@ -181,9 +197,17 @@
   <display-name>Prima COOL HD SK</display-name>
   <display-name>49</display-name>
 </channel>
+<channel id="cb2117952182f802069629308c99f563">
+  <display-name>FIGHTBOX</display-name>
+  <display-name>119</display-name>
+</channel>
 <channel id="7e624995f27b1849436b478be5b594ad">
   <display-name>ORF V</display-name>
   <display-name>879</display-name>
+</channel>
+<channel id="5a70949544b2800b09499525e005a6c5">
+  <display-name>CS Film</display-name>
+  <display-name>27</display-name>
 </channel>
 <channel id="36b45f165609d10dbb9c6f33cf028e64">
   <display-name>SR Fernsehen HD</display-name>
@@ -228,8 +252,12 @@
   <display-name>hr2</display-name>
   <display-name>896</display-name>
 </channel>
+<channel id="e6d4fa193652d80d799f245595b2b436">
+  <display-name>Mezzo</display-name>
+  <display-name>154</display-name>
+</channel>
 <channel id="86ec1b1ab37b8e6a39e7fe7852cc2761">
-  <display-name>JOJ Svet HD</display-name>
+  <display-name>JOJ Svet SK</display-name>
   <display-name>75</display-name>
 </channel>
 <channel id="7c51931a4e7ad973abd6bffef6abdfd9">
@@ -273,7 +301,7 @@
   <display-name>415</display-name>
 </channel>
 <channel id="d4bf459e0c7e39dff6a5dbf3c7c76432">
-  <display-name>WAU HD</display-name>
+  <display-name>JOJ KRIMI</display-name>
   <display-name>18</display-name>
 </channel>
 <channel id="d053839e5043efdbd060f844784a20fa">
@@ -292,6 +320,10 @@
   <display-name>K-TV HD</display-name>
   <display-name>506</display-name>
 </channel>
+<channel id="30d91da0f2c39a14af3d6b06c2318256">
+  <display-name>M4</display-name>
+  <display-name>202</display-name>
+</channel>
 <channel id="056b76209ae3b95befe8fd30a89b6bd9">
   <display-name>SWR BW HD</display-name>
   <display-name>418</display-name>
@@ -299,6 +331,10 @@
 <channel id="24999820b35f1bac625b591c6da1879b">
   <display-name>Nova Action HD</display-name>
   <display-name>359</display-name>
+</channel>
+<channel id="80d3ad2032523c7084de4344afc2cdf9">
+  <display-name>Disney CZ</display-name>
+  <display-name>128</display-name>
 </channel>
 <channel id="21cdeba0dc60ad78f604ed9fcf1f1ffc">
   <display-name>CRo LIBEREC</display-name>
@@ -340,6 +376,10 @@
   <display-name>INPLUS</display-name>
   <display-name>93</display-name>
 </channel>
+<channel id="9e4693a57e5d1bb68a061273de759776">
+  <display-name>Nova Sport 4 HD</display-name>
+  <display-name>104</display-name>
+</channel>
 <channel id="2c94a8a5189e2af93692dc26cb856c8f">
   <display-name>Penthouse Reality TV CZ</display-name>
   <display-name>309</display-name>
@@ -351,6 +391,10 @@
 <channel id="87947d2754dd6e6b15826136e790b1bf">
   <display-name>ARAGON TV INT</display-name>
   <display-name>487</display-name>
+</channel>
+<channel id="8bca8f27c9b8105e5492938a229fc3ab">
+  <display-name>Nova Sport 3 HD</display-name>
+  <display-name>103</display-name>
 </channel>
 <channel id="afb996a7ca0661ddd21758c828c4c822">
   <display-name>STORY4 HD</display-name>
@@ -387,6 +431,14 @@
 <channel id="3772ea2ab3b6ed3c1ebf7106c81160b6">
   <display-name>CRo D-DUR</display-name>
   <display-name>836</display-name>
+</channel>
+<channel id="9f5b53ab07789de62b83c2ea4160a208">
+  <display-name>Spektrum Home</display-name>
+  <display-name>22</display-name>
+</channel>
+<channel id="d2e458abd65414e649af6c7506de6540">
+  <display-name>TV2</display-name>
+  <display-name>211</display-name>
 </channel>
 <channel id="9ab75fab2edee289afcdf90e8925462d">
   <display-name>SPORT1</display-name>
@@ -520,6 +572,10 @@
   <display-name>hr-fernsehen HD</display-name>
   <display-name>437</display-name>
 </channel>
+<channel id="59e85cb7e11a9554e947ff3597fe09f7">
+  <display-name>Radio Veronica De Beste 80s</display-name>
+  <display-name>883</display-name>
+</channel>
 <channel id="aa3d3d3842d31ad8771ae3c0b9c36b93">
   <display-name>Markiza Krimi HD</display-name>
   <display-name>15</display-name>
@@ -527,6 +583,10 @@
 <channel id="03f3a1b85dbbcd710772cdec9d2eec70">
   <display-name>ANTENNE BAYERN</display-name>
   <display-name>886</display-name>
+</channel>
+<channel id="6a88d6b8f43ff2801284ad3f80ef1985">
+  <display-name>FilmBox SK</display-name>
+  <display-name>8</display-name>
 </channel>
 <channel id="aebeddb895d44ccd9583ea093dca5829">
   <display-name>Expres Z</display-name>
@@ -559,6 +619,10 @@
 <channel id="a389deba6b8516231ee3f18ca5a564a9">
   <display-name>Viasat History HD</display-name>
   <display-name>72</display-name>
+</channel>
+<channel id="bdd0233b76817c7fb7e48eb0d9f4d53a">
+  <display-name>Film+ SK</display-name>
+  <display-name>29</display-name>
 </channel>
 <channel id="b11026bb189e26368cd63a6af135ab44">
   <display-name>Arirang  HD</display-name>
@@ -632,6 +696,10 @@
   <display-name>History HD</display-name>
   <display-name>82</display-name>
 </channel>
+<channel id="aae0ebc1eab582ccfa5fd4c367fa90ab">
+  <display-name>duck TV</display-name>
+  <display-name>123</display-name>
+</channel>
 <channel id="d02ef1c1ee99b657ab8d11f119380b24">
   <display-name>Cartoonito</display-name>
   <display-name>130</display-name>
@@ -646,7 +714,7 @@
 </channel>
 <channel id="eacbd3c220de39cfa7c855755d1291cf">
   <display-name>JOJ Sport HD</display-name>
-  <display-name>100</display-name>
+  <display-name>99</display-name>
 </channel>
 <channel id="6b2456434bc7bdd5396558f13571cd95">
   <display-name>CRo DVOJKA</display-name>
@@ -716,6 +784,10 @@
   <display-name>AXN Black Central Europe</display-name>
   <display-name>32</display-name>
 </channel>
+<channel id="1a11444987ac905be4273ef09c311fcb">
+  <display-name>CS Horror</display-name>
+  <display-name>36</display-name>
+</channel>
 <channel id="00e8a3c90bd0deeb50122b87854844b2">
   <display-name>TELE 5</display-name>
   <display-name>420</display-name>
@@ -767,6 +839,14 @@
 <channel id="366a88cf3a4bab603ef6408966546e71">
   <display-name>Nova Sport 2 HD</display-name>
   <display-name>102</display-name>
+</channel>
+<channel id="d7e2aecf8ff57fd44ab80427a087652c">
+  <display-name>Cartoon Network CZ</display-name>
+  <display-name>129</display-name>
+</channel>
+<channel id="fd7bb0cf456cf702c1d7ad3abc9674d2">
+  <display-name>Viasat True Crime</display-name>
+  <display-name>74</display-name>
 </channel>
 <channel id="46b30350c9aa3698a1fe21f74a9345f2">
   <display-name>Slager Muzika</display-name>
@@ -897,7 +977,7 @@
   <display-name>9</display-name>
 </channel>
 <channel id="51a4aa5b11a599bba6bef82db96652a0">
-  <display-name>JOJ Family HD</display-name>
+  <display-name>JOJ Family</display-name>
   <display-name>364</display-name>
 </channel>
 <channel id="6055855c5c76d0e2895c0c6eac31dd59">
@@ -960,6 +1040,10 @@
   <display-name>RTL HAROM</display-name>
   <display-name>210</display-name>
 </channel>
+<channel id="0e08d2e2bbfc45c17e13f8be100c2118">
+  <display-name>CNN Prima News HD</display-name>
+  <display-name>44</display-name>
+</channel>
 <channel id="2e7b6f6343b0f5e8933b2c0c09de63e1">
   <display-name>SBN International</display-name>
   <display-name>504</display-name>
@@ -967,6 +1051,10 @@
 <channel id="7fafdae356f1ba13efc807565d7c3343">
   <display-name>tagesschau24 HD</display-name>
   <display-name>431</display-name>
+</channel>
+<channel id="c31df06378ab12873297db9c9a4016b6">
+  <display-name>M1</display-name>
+  <display-name>200</display-name>
 </channel>
 <channel id="f88e2264ba65f79b326cfc6637979767">
   <display-name>BAYERN 3</display-name>
@@ -983,6 +1071,10 @@
 <channel id="6f3b5266cc4395cac562a663d2bc1e1c">
   <display-name>ORF B</display-name>
   <display-name>872</display-name>
+</channel>
+<channel id="3a6d77678d802b3bba007dfa8b382172">
+  <display-name>Epic Drama HD</display-name>
+  <display-name>28</display-name>
 </channel>
 <channel id="17029be75b2c6dd18064a7e08316aa66">
   <display-name>BEAT JZ</display-name>
@@ -1005,7 +1097,7 @@
   <display-name>63</display-name>
 </channel>
 <channel id="ee15fde9ddc5ebb13eda8668c6268bc7">
-  <display-name>TV2Klub</display-name>
+  <display-name>FEM3</display-name>
   <display-name>225</display-name>
 </channel>
 <channel id="8a70396a7c6f6894cb24a3d30f24e5dd">
@@ -1019,6 +1111,10 @@
 <channel id="ca3109eb02103bcb81d6d189d59719d1">
   <display-name>Man-X</display-name>
   <display-name>310</display-name>
+</channel>
+<channel id="989264eb0a4fa467b7356d58cc410c9d">
+  <display-name>DOCUBOX</display-name>
+  <display-name>85</display-name>
 </channel>
 <channel id="9c75ef6b32e1bd4d68c5c1662709c410">
   <display-name>ZDF HD</display-name>
@@ -1049,7 +1145,7 @@
   <display-name>13</display-name>
 </channel>
 <channel id="6616fbed0d1431a4503a637e9f8813d1">
-  <display-name>Premium HD</display-name>
+  <display-name>Premium</display-name>
   <display-name>143</display-name>
 </channel>
 <channel id="8fa6006ebf49a041e9fb94b10f0dfd5a">
@@ -1123,6 +1219,14 @@
   <display-name>Penthouse Gold CZ</display-name>
   <display-name>303</display-name>
 </channel>
+<channel id="0a3a77f46ca8c440f745c11d49919543">
+  <display-name>RTL</display-name>
+  <display-name>208</display-name>
+</channel>
+<channel id="4c6c787411d1a55c42053f25fa9fd08e">
+  <display-name>Senzi</display-name>
+  <display-name>144</display-name>
+</channel>
 <channel id="e4854cf51b10c03d9c4ceb9a2c55dc7f">
   <display-name>CS Mystery</display-name>
   <display-name>76</display-name>
@@ -1141,6 +1245,10 @@
 <channel id="5ed8887638443a2115f1fd6c023e3935">
   <display-name>CRo VLTAVA</display-name>
   <display-name>832</display-name>
+</channel>
+<channel id="745a9877866314302b0e7ac9d1c74bde">
+  <display-name>Vixen HD</display-name>
+  <display-name>302</display-name>
 </channel>
 <channel id="ac2258f826e139b3bc13f31b3e1f5790">
   <display-name>Galaxy4</display-name>
@@ -1169,6 +1277,10 @@
 <channel id="6d1563fd55b3f3d7faa2ca07e939010c">
   <display-name>ORF 2 EUROPE HD</display-name>
   <display-name>413</display-name>
+</channel>
+<channel id="5e27d17d4759d4daade06fa98b1bb748">
+  <display-name>TV Paprika</display-name>
+  <display-name>91</display-name>
 </channel>
 <channel id="b67341fec8f6bdeaf234f8ee40e3b9bd">
   <display-name>Sorozat+</display-name>
