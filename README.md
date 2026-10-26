@@ -1,4 +1,4 @@
-# Skylink CZ/SK XMLTV (Astra 3B 23.5°E + Astra 1 19.2°)
+# Canal+ CZ/SK (formerly Skylink) XMLTV (Astra 3B 23.5°E + Astra 1 19.2°)
 
 * Generated with TVHeadend-4.3
 * EPG Data grabbed with DVBSky S960
